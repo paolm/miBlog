@@ -5,34 +5,78 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Paol Blog</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap" rel="stylesheet"/>
+        <style>
+            body {
+                font-family: 'Raleway', sans-serif;
+            }
+            h1 {
+                text-align: center;
+            }
+            .seccionDatos{
+                max-width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .divDatos {
+                float: left;
+                padding: 10px 50px;
+                border: #CFB0FF 1px solid;
+                margin-bottom: 15px;
+                border-radius: 10px;
+            }
+            .divImg {
+                float: right;
+                padding: 52px;
+                border: #CFB0FF 1px solid;
+                border-radius: 10px;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+            .navegation{
+                margin-top: 20px;
+            }
+            .link{
+                text-decoration: none;
+                color: #4900BB;
+            }
+            .clear {
+                clear: both;
+            }
+            
+        </style>
     </head>
     <body>
         <header>
-            <h1>Mi T&iacute;tulo</h1>
+            <h1>Mi Breve Blog</h1>
         </header>
-        <nav>
-            <a href="http://google.com" target="_blank">Dudas?</a>
-            <a href="about.html">About</a>
-        </nav>
-        <section>
-            <article>
-                <a href="https://facebook.com" target="_blank">
-                    <img src="./images/flor.png" alt="Flor" height="150"/>
-                </a>
-                <h2>Datos Personales</h2>
-                <ul>
-                    <li>Nombre: Paola</li>
-                    <li>Profesi&oacute;n: Desarrolladora</li>
-                    <li>Lugar Nacimiento: Monte Grande</li>
-                </ul>
-                <h3>Hobbies</h3>
-                <ol>
-                    <li>Rollers</li>
-                    <li>Pasteler&iacute;a</li>
-                    <li>Fotograf&iacute;a</li>
-                    <li>Nataci&oacute;n</li>
-                </ol>
-                <hr />
+        <section class="seccionDatos">
+            <article class="bloqueArriba">
+                <div class="divDatos">
+                    <h2>Datos Personales</h2>
+                    <ul>
+                        <li>Nombre: Paola</li>
+                        <li>Profesi&oacute;n: Desarrolladora</li>
+                        <li>Lugar Nacimiento: Monte Grande</li>
+                    </ul>
+                    <h3>Hobbies</h3>
+                    <ol>
+                        <li>Rollers</li>
+                        <li>Pasteler&iacute;a</li>
+                        <li>Fotograf&iacute;a</li>
+                        <li>Nataci&oacute;n</li>
+                    </ol>
+                </div>
+                <div class="divImg">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="./images/flor.png" alt="Flor" height="150"/>
+                    </a>
+                    <nav class="navegation">
+                        <a href="http://google.com" target="_blank" class="link">Dudas?</a>
+                        <a href="about.html" class="link" style="margin-left: 10px;">About</a>
+                    </nav>
+                </div>
+                <hr class="clear"/>
                 <h4>Texto random</h4>
                 <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt 
                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
